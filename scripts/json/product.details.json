@@ -1,0 +1,169 @@
+{
+	"offset": 0,
+	"count": 5,
+	"total": 5,
+	"results": [
+		{
+			"id": "6094aca3-db03-4f60-b638-f91beade0f64",
+			"name": "Bánh cupcake",
+			"slug": "banhbo1493137169751",
+			"ingredient": "with egss, baking powder, banana, green beans & flour",
+			"description": "Sắp tới sinh nhật người yêu hoặc kỉ niệm ngày yêu nhau. Bạn đang đau đầu suy nghĩ xem quà gì để tặng. Bánh Cupcake sẽ là một lựa chọn tốt đó các bạn nhé. Hôm nay chúng tôi sẽ giới thiệu với các bạn cách làm một loại bánh cupcake mới đó là Cupcake chuối dừa. Chiếc bánh nhỏ xinh thơm lừng mùi bơ, thoáng hương dừa và quyến rũ với chuối Bác sỹ vẫn bảo: Mỗi ngày 1 trái chuối và chẳng ai phải tới gặp tôi. Hãy cùng chúng tôi vào bếp thực hiện món này nhé.",
+			"categories": [
+			"c62a23dd-3638-42ac-b4fd-eba231388f0a"
+			],
+			"sku": "sku_SAPPHIRE_variant1_1493137169755",
+			"price": 2800,
+			"image": ["02.jpg", "03.jpg", "04.jpg"]
+		},
+		{
+			"id": "6094aca3-db03-4f60-b638-f91beade0f65",
+			"name": "Bánh bò nướng size nhỏ",
+			"slug": "banhbo1493137169752",
+			"ingredient": "with egss, green beans & flour",
+			"description": "Khi nhắc đến bánh bò, chắc mọi người sẽ nghĩ ngay đến chiếc bánh bò hấp truyền thống ăn cùng với muối mè. Nhưng baaboo xin được giới thiệu đến các bạn chiếc bánh bò nướng đầy mới lạ. Bánh là sự kết hợp giữa cái béo của nước cốt dừa, vị bùi bùi của trứng và vị ngọt thanh của đường.",
+			"categories": [
+			"c62a23dd-3638-42ac-b4fd-eba231388f0a"
+			],
+			"sku": "sku_SAPPHIRE_variant1_1493137169755",
+			"price": 3000,
+			"image": ["03.jpg", "04.jpg"]
+		},
+		{
+			"id": "6094aca3-db03-4f60-b638-f91beade0f64",
+			"name": "Bánh bò nướng size lớn",
+			"slug": "banhbo1493137169753",
+			"ingredient": "with egss, sugar, green beans & flour",
+			"description": "Với cỡ bánh lớn hơn, bạn dễ dàng chia sẽ nhiều hơn với mọi người( từ 9-10 người). Đặc biệt baaboo sử dụng đường thốt nốt trong bánh sẽ tạo cho bánh có vị ngọt thanh, ăn vào không quá gắt như đường cát, lại có vị bùi bùi, thơm béo, sẽ tạo cảm giác mới lạ cho người ăn, đã ăn rồi là cứ muốn ăn nữa. ",
+			"categories": [
+			"c62a23dd-3638-42ac-b4fd-eba231388f0a"
+			],
+			"sku": "sku_SAPPHIRE_variant1_1493137169755",
+			"price": 2800,
+			"image": ["04.jpg"]
+		},
+		{
+			"id": "6094aca3-db03-4f60-b638-f91beade0f64",
+			"name": "Bánh bò ong bướm",
+			"slug": "banhbo1493137169754",
+			"ingredient": "with egss, green beans & flour",
+			"description": "Tạo cảm giác ngon miệng cho các bé khi bánh có hình ảnh ngộ nghĩnh. Bánh dùng ăn tráng miệng hay ăn vặt lúc chuyện trò thích hợp không gì bằng. Từng chiếc bánh dẻo dai, béo bùi, thơm ngậy, hương vị thanh tao khiến bao bực dọc trong người cũng như tan biến hết.",
+			"categories": [
+			"c62a23dd-3638-42ac-b4fd-eba231388f0a"
+			],
+			"sku": "sku_SAPPHIRE_variant1_1493137169755",
+			"price": 2800,
+			"image": ["05.jpg"]
+		},
+		{
+			"id": "c4841ba5-5f9d-4515-a159-3fa2c4e5fb5c",
+			"name": "Bánh chuối nướng ổ size nhỏ ",
+			"slug": "wb-athletic-tank1493137169762",
+			"description": "Bánh thơm béo mùi nước cốt dừa hòa quyện với từng lớp chuối chín, vừa miệng, không quá ngọt nên ăn không bị ngấy, thêm tách trà xanh nữa thì tuyệt biết bao. Chiếc bánh ngon không chỉ là món quà của quê hương, mà còn là cầu nối tình cảm của những tâm hồn đồng điệu. ",
+			"categories": [
+			"fba32611-b398-48ae-9a5e-28257470c8fb"
+			],
+			"sku": "sku_WB_ATHLETIC_TANK_variant1_1493137169762",
+			"price": 8400,
+			"image": ["06.jpg"]
+		},
+		{
+			"id": "f4625b8f-5daa-40cb-a414-7a1d4f8ef45e",
+			"name": "Bánh đậu xanh ổ size nhỏ",
+			"slug": "mb-premium-tech-t1493137169775",
+			"description": "Với những hạt đậu xanh được tuyển chọn kỹ càng tạo nên 1 mùi vị đặc trưng cho bánh. Vị dai bên ngoài bánh và phần nhân bán thơm dẻo sẽ khiến bạn không thể chối từ. Bánh thơm mùi đậu xanh, ngậy mùi sữa và béo của nước cốt dừa, tuy đơn giản nhưng sức hấp dẫn vượt xuyên thời gian. ",
+			"categories": [
+			"980c4bf7-28ff-49be-935c-79410fd93d66"
+			],
+			"sku": "sku_MB_PREMIUM_TECH_T_variant1_1493137169775",
+			"price": 9000,
+			"image": ["08.jpg"]	
+		},
+		{
+			"id": "273f5a46-0110-45dd-9900-ab72dd73b2e2",
+			"name": "Bánh đậu xanh ổ size lớn",
+			"slug": "girls-hartbreak-crew1493137169760",
+			"description": "Baaboo cung cấp các sản phẩm làm từ nguyên liệu thiên nhiên như trứng, đường, bột, dừa. Bánh của baaboo không chứa các chất bảo quản và thành phần nhân tạo khác. Bạn hãy liên lạc vói baaboo để nhận được nhiều ưu đãi khi đặt bánh với số lượng lớn. ",
+			"categories": [
+			"980c4bf7-28ff-49be-935c-79410fd93d66"
+			],
+			"sku": "sku_GIRLS_HARTBREAK_CREW_variant1_1493137169760",
+			"price": 3400,
+			"image": ["09.jpg"]
+		},
+		{
+			"id": "6094aca3-db03-4f60-b638-f91beade0f64",
+			"name": "Bánh bò cách tân",
+			"slug": "banhbo1493137169755",
+			"ingredient": "with egss, green beans & flour",
+			"description": "Với nhiều hình dạng và việc sử dụng chocolate sẽ tăng thêm phần ngon miệng cho bạn. Từng chiếc bánh dẻo dai, béo bùi, thơm ngậy, hương vị thanh tao khiến bao bực dọc trong người cũng như tan biến hết.  ",
+			"categories": [
+			"c62a23dd-3638-42ac-b4fd-eba231388f0a"
+			],
+			"sku": "sku_SAPPHIRE_variant1_1493137169755",
+			"price": 3000,
+			"image": ["13.jpg", "12.jpg"]
+		},
+		{
+			"id": "c4841ba5-5f9d-4515-a159-3fa2c4e5fb5c",
+			"name": "Bánh chuối nướng ổ size lớn",
+			"slug": "wb-athletic-tank1493137169762",
+			"description": "Bánh chuối nướng với Chuối được chia làm 2 phần, một phần trộn đều với bột để bánh đượm mùi vị chuối, một phần xếp trên mặt bánh để từng lát chuối được nhiệt nướng thơm se se lại tạo thành bề mặt chín vàng đẹp mắt, bên trong dẻo mềm, thoang thoảng hương vị béo của nước cốt dừa thật hấp dẫn và thơm ngon có thể dùng làm món ăn chơi hay món tráng miệng đều thích hợp ",
+			"categories": [
+			"fba32611-b398-48ae-9a5e-28257470c8fb"
+			],
+			"sku": "sku_WB_ATHLETIC_TANK_variant1_1493137169762",
+			"price": 65000,
+			"image": ["07.jpg"]
+		},
+		{
+			"id": "c4841ba5-5f9d-4515-a159-3fa2c4e5fb5c",
+			"name": "Bánh chuối nướng cupcake",
+			"slug": "wb-athletic-tank1493137169762",
+			"description": "Chuối là một trong những thực phẩm bổ dưỡng và được sử dụng rộng rãi nhất thế giới. khi còn là bông có thể làm canh, lớn lên chút thì làm gỏi, khi chín có thể ăn, nấu chè, làm kem và đặc biệt là làm bánh. Vị dai bên ngoài bánh và phần nhân bán thơm dẻo sẽ khiến bạn không thể chối từ.",
+			"categories": [
+			"fba32611-b398-48ae-9a5e-28257470c8fb"
+			],
+			"sku": "sku_WB_ATHLETIC_TANK_variant1_1493137169762",
+			"price": 10000,
+			"image": ["15.jpg"]
+		},
+		{
+			"id": "e5e03ab6-7c09-498c-b11f-c638f56371d2",
+			"name": "MB SOFTSHELL LINER",
+			"slug": "mb-softshell-liner1493137169774",
+			"description": "Sample description",
+			"categories": [
+			"c62a23dd-3638-42ac-b4fd-eba231388f0a"
+			],
+			"sku": "sku_MB_SOFTSHELL_LINER_variant1_1493137169774",
+			"price": 9050,
+			"image": ["12.jpg", "10.jpg"]
+		},
+		{
+			"id": "f4625b8f-5daa-40cb-a414-7a1d4f8ef45e",
+			"name": "Bánh đậu xanh bông hồng",
+			"slug": "mb-premium-tech-t1493137169775",
+			"description": "Tuổi thơ ai lớn lên mà không từng thưởng thức bánh đậu xanh. Bánh là sự kết hợp hài hòa giữa vị béo của nước cốt dừa, vị bùi bùi đặc trưng của đậu xanh, vị ngọt thanh và màu vàng tự nhiên của đậu xanh. Bánh vàng ruộm, thơm nức mũi, khi ăn thấy vị bùi bùi của đậu xanh, dẻo thơm của khoai mì còn vấn vương mãi.",
+			"categories": [
+			"980c4bf7-28ff-49be-935c-79410fd93d66"
+			],
+			"sku": "sku_MB_PREMIUM_TECH_T_variant1_1493137169775",
+			"price": 9000,
+			"image": ["10.jpg"]	
+		},
+		{
+			"id": "273f5a46-0110-45dd-9900-ab72dd73b2e2",
+			"name": "Bánh đậu xanh mini cup ",
+			"slug": "girls-hartbreak-crew1493137169760",
+			"description": "Bánh vàng ruộm, thơm nức mũi, khi ăn thấy vị bùi bùi của đậu xanh, dẻo thơm của khoai mì còn vấn vương mãi. Tất cả tạo nên một hương vị tuyệt vời mà khi bạn đã ăn rồi là cứ muốn ăn nữa. Chỉ cần một miếng bánh khoai mì nướng cùng một ly sữa nóng nhỏ là bạn đã có thể lấy lại tinh thần để buổi chiều làm việc thật hiệu quả rồi. ",
+			"categories": [
+			"980c4bf7-28ff-49be-935c-79410fd93d66"
+			],
+			"sku": "sku_GIRLS_HARTBREAK_CREW_variant1_1493137169760",
+			"price": 3400,
+			"image": ["11.jpg", "12.jpg"]
+		}
+	],
+	"facets": [ ]
+}
