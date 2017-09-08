@@ -3,84 +3,76 @@
 Resume: https://thienkim-frontend.github.io/cv/
 
 Useful Urls
-Home	https://thienkim-frontend.github.io/baaboo.angular/#!
-Product	https://thienkim-frontend.github.io/baaboo.angular/product
-Category	https://thienkim-frontend.github.io/baaboo.angular/category/banh-bo-nuong
+Home						https://thienkim-frontend.github.io/baaboo.angular/#!
+Product					https://thienkim-frontend.github.io/baaboo.angular/product
+Category				https://thienkim-frontend.github.io/baaboo.angular/category/banh-bo-nuong
 Product detail	https://thienkim-frontend.github.io/baaboo.angular/details/banh-cupcake
-Contact	https://thienkim-frontend.github.io/baaboo.angular/contact
-Price	https://thienkim-frontend.github.io/baaboo.angular/price
-Gallery	https://thienkim-frontend.github.io/baaboo.angular/#!/gallery
-About	https://thienkim-frontend.github.io/baaboo.angular/about
-Team	https://thienkim-frontend.github.io/baaboo.angular/team
-404	https://thienkim-frontend.github.io/baaboo.angular/404
+Contact					https://thienkim-frontend.github.io/baaboo.angular/contact
+Price						https://thienkim-frontend.github.io/baaboo.angular/price
+Gallery					https://thienkim-frontend.github.io/baaboo.angular/#!/gallery
+About						https://thienkim-frontend.github.io/baaboo.angular/about
+Team						https://thienkim-frontend.github.io/baaboo.angular/team
+404							https://thienkim-frontend.github.io/baaboo.angular/404
 
 ## Plugins
-AngularJS v1.6.5 
-https://angularjs.org/
+AngularJS v1.6.5 			https://angularjs.org/
 
-UI Bootstrap - AngularJS directives specific to Bootstrap
-https://github.com/angular-ui/bootstrap
+UI Bootstrap 					https://github.com/angular-ui/bootstrap
 
-UI-Router for AngularJS (1.x)
-https://ui-router.github.io/ng1/
+UI-Router 						https://ui-router.github.io/ng1/
 
-imagesLoaded - Detect when images have been loaded
-https://github.com/desandro/imagesloaded
+imagesLoaded 					https://github.com/desandro/imagesloaded
 
-owlcarousel2 
-https://owlcarousel2.github.io/OwlCarousel2/
+owlcarousel2 					https://owlcarousel2.github.io/OwlCarousel2/
 
-fancyBox3
-http://fancyapps.com/fancybox/3/
+fancyBox3 						http://fancyapps.com/fancybox/3/
 
-easy-pie-chart
-https://github.com/rendro/easy-pie-chart
+easy-pie-chart 				https://github.com/rendro/easy-pie-chart
 
-countTo.js
-https://github.com/mhuggins/jquery-countTo
+countTo.js 						https://github.com/mhuggins/jquery-countTo
 
-jquery.countdown.js
-http://keith-wood.name/countdown.html
+countdown.js 					http://keith-wood.name/countdown.html
 
-jquery.appear.js
-https://github.com/bas2k/jquery.appear/
+appear.js 						https://github.com/bas2k/jquery.appear/
 
-Bootstrap 3
-http://bootstrapdocs.com/v3.0.3/docs/
+Bootstrap 3 					http://bootstrapdocs.com/v3.0.3/docs/
 
-Sass - CSS pre-processors
-http://sass-lang.com/
+Sass 									http://sass-lang.com/
 
-Compass 
-http://compass-style.org/
+Compass 							http://compass-style.org/
 
 ## Build & development
 
 1. Install Node.js
-https://nodejs.org/en/
+	https://nodejs.org/en/
 
 2. Install Grund, Yeoman, Bower globally
-Grunt - The JavaScript Task Runner
-https://gruntjs.com/getting-started
 
-Yeoman generator for AngularJS - lets you quickly set up a project with sensible defaults and best practices.
-https://github.com/yeoman/generator-angular
+	Grunt - The JavaScript Task Runner
+	https://gruntjs.com/getting-started
 
-Bower - A package manager for the web
-https://bower.io/
+	Yeoman generator for AngularJS - lets you quickly set up a project with sensible defaults and best practices.
+	https://github.com/yeoman/generator-angular
 
-$ npm install -g grunt-cli bower yo generator-karma generator-angular
-
+	Bower - A package manager for the web
+	https://bower.io/
+	```
+	$ npm install -g grunt-cli bower yo generator-karma generator-angular
+	```
 3. Install project dependencies, please check file package.json for more information
-$ npm install
-
+	```
+	$ npm install
+	```
 4. Preview website
-http://localhost:9000/#!/
-$ grunt serve
-
+	http://localhost:9000/#!/
+	```
+	$ grunt serve
+	```
 5. Concat and minify all files javascript and images for "go LIVE" website
-$ grunt
-
-## Testing
-
-Running `grunt test` will run the unit tests with karma.
+	```
+	$ grunt
+	```
+## Testing with karma
+	```
+	$ grunt test
+	```
