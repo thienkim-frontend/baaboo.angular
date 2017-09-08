@@ -1,18 +1,29 @@
-# baaboo-app
+# baaboo-app by [Thien Kim](https://thienkim-frontend.github.io/cv/)
+> This app is buit with Angular 1, Yeoman
 
-Resume: https://thienkim-frontend.github.io/cv/
+*Useful Urls*
 
-Useful Urls
+
 Home						https://thienkim-frontend.github.io/baaboo.angular/#!
+
 Product					https://thienkim-frontend.github.io/baaboo.angular/product
+
 Category				https://thienkim-frontend.github.io/baaboo.angular/category/banh-bo-nuong
+
 Product detail	https://thienkim-frontend.github.io/baaboo.angular/details/banh-cupcake
+
 Contact					https://thienkim-frontend.github.io/baaboo.angular/contact
+
 Price						https://thienkim-frontend.github.io/baaboo.angular/price
+
 Gallery					https://thienkim-frontend.github.io/baaboo.angular/#!/gallery
+
 About						https://thienkim-frontend.github.io/baaboo.angular/about
+
 Team						https://thienkim-frontend.github.io/baaboo.angular/team
+
 404							https://thienkim-frontend.github.io/baaboo.angular/404
+
 
 ## Plugins
 AngularJS v1.6.5 			https://angularjs.org/
@@ -73,6 +84,6 @@ Compass 							http://compass-style.org/
 	$ grunt
 	```
 ## Testing with karma
-	```
-	$ grunt test
-	```
+```
+$ grunt test
+```
