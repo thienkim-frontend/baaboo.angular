@@ -1,0 +1,68 @@
+/*tab  */
+.baaboo-tabs{
+    position: relative;
+    .nav-tabs{
+        position: relative;
+        display: table-cell;
+        vertical-align: top;
+        width: 200px;
+        height: 100%;
+        border-right: 1px solid #efefef;
+        box-sizing: border-box;
+        border-bottom: 0;
+        li{
+            display: block;
+            float: none;
+            margin: 0 0 24px;
+
+            &.active a{
+                color: $highlight-color;
+                border: 0;
+                background-color: transparent;
+            }
+            &:hover{border: 0;}
+        }
+        a{  
+            position: relative;
+            display: inline-block;
+            color: $black;
+            box-sizing: border-box;
+            transition: color .2s ease-out,background-color .2s ease-out,border-color .2s ease-out;
+            &:hover{
+                background: transparent;
+                 border-color: $white;
+                color: $highlight-color;
+            }
+        }
+    }
+    .tab-content {
+        display: table-cell;
+        vertical-align: top;
+        width: calc(100% - 200px);
+        height: 100%;
+        padding: 0 0 0 60px;
+        box-sizing: border-box;
+    }
+    .baaboo-tabs-nav-line {
+        position: absolute;
+        width: 0;
+        height: 0;
+        right: -2px;
+        opacity: 0;
+        border-right: 3px solid $highlight-color;
+        transition: opacity .2s .4s,height 0s .6s,top .4s cubic-bezier(.19,.65,.02,.93);
+    }
+}
+
+
+.panel-group .panel{
+    border-width: 1px 0 0 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+.panel-default > .panel-heading{
+    background-color: $white;
+}
+.panel-title i{
+    margin-right: 15px;
+}

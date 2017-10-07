@@ -1,0 +1,63 @@
+<!-- /HEADER BACKGROUND SECTION -->
+<div class="baaboo-has-background ken-burn" data-parallax="scroll" data-natural-height="850" data-natural-width="1920" data-position="top" data-image-src="images/bg/bg_04.jpg" data-bleed="1">
+    <div class="baaboo-content-wrapper" style="background-image: url(images/bg/bg_04.jpg)">
+        <div class="baaboo-container-inner">
+          <div class="baaboo-title-holder">
+              <h1 class="baaboo-page-title"><span>OUR PRODUCTS</span></h1>
+          <span class="baaboo-subtitle"><span>Let's count down and enjoy big sale on our 8th anniversary</span></span>
+          </div>
+      </div>
+    </div>
+</div>
+<!-- /HEADER BACKGROUND SECTION -->
+
+<!-- REVIEW PRODUCT CAROUSEL -->
+<section id="product" class="review_pro noprint">
+  <!-- COUNTDOWN SECTION -->
+  <div class="row">
+    <div class="container">
+      <div class="edgtf-countdown " id="countdown6448" data-year="2018" data-month="" data-day="" data-hour="" data-minute="" data-timezone="0" data-month-label="MONTHS" data-day-label="DAYS" data-hour-label="HOURS" data-minute-label="MINUTES" data-second-label="SECONDS" data-digit-size="70" data-label-size="16" style="overflow: hidden;"></div>
+    </div>
+  </div>
+  <!-- /COUNTDOWN SECTION -->
+
+  <div class="container">
+        
+    <!-- OWL CAROUSEL _ PRODUCTS  -->
+    <div class="owl-products" ng-class-even="'reverse'"  ng-repeat="itemCategory in categoryList" on-finish-render >
+      <div class="carousel-description " ng-if="results.length !== 0">
+        <div class="overlay"></div>
+        <div class="content">
+          <h4>{{itemCategory.name}}</h4>
+          <div class="des" ng-bind-html="itemCategory.description"></div>
+        </div>
+        <img src="images/{{itemCategory.image}}" alt="image 01">
+      </div>
+      <div class="carousel_wrapper">
+        <ul class="owl-carousel" owl-carousel-item>
+          <li  ng-repeat="itemPro in guitarVariable | filter:itemCategory.id as results" on-finish-render class="product-item">
+            <div class="item_inner">
+              <div class="img_container">
+                <img src="images/product/{{itemPro.image[0]}}" alt="{{itemCategory.name}}" />
+              </div>
+              <div class="des_container">
+                <h5 class="pro_name"><a href="#!/details/{{itemPro.name | convertDash | removeVnUnicode}}">{{itemPro.name | capitalize}}</a></h5>
+                  <div class="info"><span ng-bind-html="itemPro.description | limitTo: 55" ></span><span ng-if="itemPro.description.length > 55">&hellip;</span></div>
+                <div class="price_box">
+                  <span class="price">{{itemPro.price | number:0 }} vnd</span>
+                  <span class="old_price">80,000 </span> 
+                </div>
+                <a href="javascript:void(0);" class="btn btn-cta" ng-click="addToCart(itemPro);" custom-click><i class="ion-ios-cart"></i>Đặt hàng </a>
+              </div>
+            </div>
+          </li>
+          <!-- <li ng-if="results.length === 0">
+            <strong>No results found...</strong>
+            <span>{{results}}</span>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+    <!-- //OWL CAROUSEL _ PRODUCTS  -->
+  </div>
+</section>

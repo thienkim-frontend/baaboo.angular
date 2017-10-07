@@ -1,0 +1,63 @@
+#edgtf-back-to-top {
+    position: fixed;
+    width: 41px;
+    right: 25px;
+    bottom: 25px;
+    margin: 0;
+    z-index: 10000;
+    opacity: 0;
+    visibility: hidden
+}
+
+#edgtf-back-to-top.off {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity .15s ease,visibility 0s .15s;
+    -moz-transition: opacity .15s ease,visibility 0s .15s;
+    transition: opacity .15s ease,visibility 0s .15s
+}
+
+#edgtf-back-to-top.on {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity .3s ease;
+    -moz-transition: opacity .3s ease;
+    transition: opacity .3s ease
+}
+
+#edgtf-back-to-top>span {
+    position: relative;
+    display: block;
+    width: 39px;
+    height: 39px;
+    line-height: 40px;
+    font-size: 15px;
+    text-align: center;
+    color: #fff;
+    background-color: $highlight-color;
+    border: 1px solid $highlight-color;
+    overflow: hidden;
+    -webkit-transition: color .3s ease-in-out,background-color .3s ease-in-out,border-color .3s ease-in-out;
+    -moz-transition: color .3s ease-in-out,background-color .3s ease-in-out,border-color .3s ease-in-out;
+    transition: color .3s ease-in-out,background-color .3s ease-in-out,border-color .3s ease-in-out
+}
+
+#edgtf-back-to-top>span i {
+    -webkit-transition: .15s ease 50ms;
+    -moz-transition: .15s ease 50ms;
+    transition: .15s ease 50ms
+}
+
+#edgtf-back-to-top>span:hover i {
+    -webkit-transform: translateY(-3px);
+    -moz-transform: translateY(-3px);
+    transform: translateY(-3px);
+    -webkit-transition: .3s cubic-bezier(1,-1.21,.25,1);
+    -moz-transition: .3s cubic-bezier(1,-1.21,.25,1);
+    transition: .3s cubic-bezier(1,-1.21,.25,1)
+}
+
+#edgtf-back-to-top span span {
+    display: block;
+    line-height: inherit
+}

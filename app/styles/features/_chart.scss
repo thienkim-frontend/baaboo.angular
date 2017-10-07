@@ -1,0 +1,134 @@
+/* pie-chart */
+.baaboo-pie-chart-holder {
+    position: relative;
+    width: 100%;
+    opacity: 0;
+    transition: opacity .2s ease-in;
+    margin-top: 35px;
+    .baaboo-pc-percentage {
+        position: relative;
+        display: block;
+        height: 190px;
+        width: 190px;
+        text-align: center;
+        margin: 0 auto;
+         canvas {
+            position: absolute;
+            top: 0;
+            left: 0
+        }
+    }
+    .baaboo-pc-percent {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        color: #363636;
+        font-size: 30px;
+        line-height: .75em;
+        &:after {
+            position: relative;
+            top: -6px;
+            right: -2px;
+            content: '%';
+            font-size: 15px
+        }
+    }
+    .baaboo-pc-text-holder {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        vertical-align: middle;
+        text-align: center;
+        margin: 20px 0 0;
+        .baaboo-pc-text {
+            margin: 8px 0 0;
+            color: #7c7c7c;
+        }
+    }
+    .baaboo-pc-title {
+        margin: 0;
+        color: #030303;
+        font-size: 14px;
+        text-transform: capitalize;
+    }
+    .inner-circle {
+        width: 100%;
+        text-align: center;
+        height: 190px;
+        margin-top: -75px;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        display: table;
+    }
+    .inner-center {
+        display: table-cell;
+        vertical-align: middle;
+        height: 190px;
+        width: 190px;
+        padding: 0 15px;
+    }
+    .baaboo-pc-title{
+        font-weight: normal;
+        margin-bottom: 10px;
+        font-size: 14px;
+        text-transform: uppercase;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #d2d2d2;;
+    }
+}
+
+
+/* progess bar */
+
+.baaboo-progress-bar {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    margin-bottom: 15px;
+    .baaboo-pb-title-holder {
+        position: relative;
+        margin: 10px 0;
+        .baaboo-pb-title {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            z-index: 100
+        }
+    }
+    .baaboo-pb-content-holder {
+        position: relative;
+        height: 3px;
+        overflow: hidden;
+        background-color:  $grey;
+        .baaboo-pb-content {
+            width: 0;
+            height: 3px;
+            max-width: 100%;
+            overflow: hidden;
+            border-top-right-radius: 6px;
+            border-bottom-right-radius: 6px;
+            background-color: $highlight-color;
+        }
+    }
+    .baaboo-pb-percent {
+        position: absolute;
+        left: 0;
+        bottom: 1px;
+        width: auto;
+        display: inline-block;
+        vertical-align: middle;
+        opacity: 0;
+        z-index: 10;
+        color: $highlight-color;
+        &.baaboo-active {
+            transform: translateX(-100%)
+        }
+        &:after {
+            content: '%'
+        }
+    }
+
+}
+

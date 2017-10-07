@@ -1,0 +1,45 @@
+{
+  "name": "baaboo-app",
+  "version": "0.0.0",
+  "dependencies": {
+    "angular": "^1.4.0",
+    "bootstrap": "^3.2.0",
+    "angular-animate": "^1.4.0",
+    "angular-cookies": "^1.4.0",
+    "angular-resource": "^1.4.0",
+    "angular-route": "^1.4.0",
+    "angular-sanitize": "^1.4.0",
+    "angular-touch": "^1.4.0",
+    "angular-bootstrap": "^2.5.0",
+    "angular-messages": "^1.6.5",
+    "angular-ui-router": "0.3.1",
+    "imagesloaded": "^4.1.3",
+    "owl.carousel": "^2.2.1",
+    "fancybox": "^3.1.20",
+    "ngmap": "^1.18.4",
+    "jquery.easy-pie-chart": "^2.1.6",
+    "Ionicons": "ionicons#^2.0.1",
+    "jquery-countTo": "^1.2.0",
+    "jquery.appear.bas2k": "*",
+    "kbw-countdown": "kbwood_countdown#^2.1.0",
+    "angular-breadcrumb": "^0.5.0",
+    "jquery-ui": "^1.12.1"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.4.0",
+    "wow": "^1.1.2",
+    "parallax": "https://github.com/pixelcog/parallax.js/",
+    "font-awesome": "font-awsome#^4.7.0"
+  },
+  "appPath": "app",
+  "moduleName": "baabooApp",
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "less/bootstrap.less",
+        "dist/css/bootstrap.css",
+        "dist/js/bootstrap.js"
+      ]
+    }
+  }
+}

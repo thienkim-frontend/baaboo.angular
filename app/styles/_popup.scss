@@ -1,0 +1,132 @@
+#register_frm{
+  width: 400px;
+}
+.form-control{
+  border-radius: 5px;
+}
+.form-group{
+  position: relative;
+  > [class ^= "icon"], .btn-calendar{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -8px;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    color: $grey;
+  }
+  .icon-email{
+    font-size: 14px;
+  }
+  .btn-calendar{
+    padding-right: 0;
+    margin-top: -12px;
+
+  }
+}
+#cart_popup {
+  width: 720px;
+  padding: 0px 15px 20px 15px;
+  .tbl-cart {
+    .width-30{
+      width: 30%;
+    }
+    .width-20{
+      width: 20%;
+    }
+    .width-10{
+      width: 10%;
+    }
+    width: 100%;
+    border-spacing: 0 15px;
+    margin-bottom: 10px;
+    border: 1px solid $grey-02;
+    td {
+      padding: 5px;
+      vertical-align: middle;
+      height: 72px;
+      border-right: 1px solid $grey-02;
+      border-bottom: 1px solid $grey-02;
+      &:not(:first-child) {
+        text-align: center;
+      }
+    }
+    input {
+      width: 50px;
+      margin: 0px 10px 0px 0px;
+    }
+  }
+  button{
+    background: transparent;
+    border: 0;
+    font-size: 10px;
+  }
+  .thumbnail-pro {
+    width: 100px;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .delete {
+    background: #ccc;
+    width: 24px;
+    height: 24px;
+    display: block;
+    margin: 0px auto;
+    text-align: center;
+    line-height: 25px;
+    color: #fff;
+    &:hover {
+      background-color: #444444;
+    }
+  }
+  .total {
+    span {
+      font-size: 30px;
+      vertical-align: middle;
+      margin-left: 10px;
+    }
+  }
+  h4 {
+    text-transform: capitalize;
+    display: inline-block;
+    width: 150px;
+    vertical-align: middle;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .info_wrapper {
+    background: url(../images/icon_delivery.png) no-repeat 120px bottom;
+    height: 320px;
+  }
+  .info_inner {
+    border: 1px solid $grey-02;
+    padding: 10px 10px 10px 20px;
+    position: relative;
+    &:after {
+      content: '';
+      width: 30px;
+      height: 20px;
+      position: absolute;
+      bottom: -11px;
+      right: 20px;
+      border-bottom: 1px solid $grey-02;
+      background-color: $white;
+      border-right: 1px solid $grey-02;
+      @include transform(skew(34deg) rotate(35deg));
+    }
+    ul {
+      list-style-image: url(../images/circle.png);
+    }
+    li {
+      margin-bottom: 10px;
+      &:last-child {
+        margin-bottom: 0px;
+      }
+    }
+  }
+  .btn_cart {
+    margin-top: 20px;
+  }
+}

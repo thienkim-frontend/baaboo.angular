@@ -1,0 +1,22 @@
+<!-- REVIEW PRODUCT CAROUSEL -->
+<section class="review_pro noprint product-block">
+  <div class="container">
+    <ul class="row">
+      <li  ng-repeat="itemPro in guitarVariable | limitTo:4 " class="col-md-3 product-item" >
+        <div class="item_inner">
+          <div class="img_container">
+            <img src="images/product/{{itemPro.image[0]}}" alt="image 01" class="img-responsive" />
+          </div>
+          <div class="des_container">
+            <h5 class="pro_name"><a href="#!/details/{{itemPro.name | convertDash | removeVnUnicode}}">{{itemPro.name | capitalize}}</a></h5>
+              <div class="info"><span ng-bind-html="itemPro.description | limitTo: 55" ></span><span ng-if="itemPro.description.length > 55">&hellip;</span></div>
+            <div class="price_box">
+              <span class="price">{{itemPro.price | number:0 }} vnd</span>
+            </div>
+            <a href="javascript:void(0);" class="btn btn-cta" ng-click="addToCart(itemPro);" custom-click><i class="ion-ios-cart"></i>Đặt hàng </a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>

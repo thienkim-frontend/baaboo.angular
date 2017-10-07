@@ -1,0 +1,55 @@
+<section class="section-block">
+	<!-- /HEADER BACKGROUND SECTION -->
+	<div class="baaboo-has-background ken-burn" data-parallax="scroll" data-natural-height="850" data-natural-width="1920" data-position="top" data-image-src="images/bg/bg_03.jpg" data-bleed="1">
+	    <div class="baaboo-content-wrapper" style="background-image: url(images/bg/bg_03.jpg)">
+	        <div class="baaboo-container-inner">
+	          <div class="baaboo-title-holder">
+	              <h1 class="baaboo-page-title"><span>Image Gallery</span></h1>
+			      <span class="baaboo-subtitle"><span>Experienced and Friendly</span></span>
+	          </div>
+	      </div>
+	    </div>
+	</div>
+	<!-- /HEADER BACKGROUND SECTION -->
+	<div class="bottom-bar">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+					<ol class="breadcrumb">
+					  <li class="breadcrumb-item"><a href="#!/">Home</a></li>
+					  <li class="breadcrumb-item"><a href="#">About us</a></li>
+					  <li class="breadcrumb-item active">Image Gallery</li>
+					</ol>
+				</div>
+				<div class="col-md-4">
+					<form>
+					  <div class="form-group search-frm">
+					     <input type="text" placeholder="Search..." ng-model="searchGallarey">
+					     <button><span class="ion-search"></span></button>
+					  </div>
+					</form>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<div class="container">
+		<ul class="filter">
+			<li class="text-effect" ng-repeat="filter in filters" ng-click="select($index)" ng-class="{active: $index == selected}">
+				<a href="" data-hover="{{filter.title}}">{{filter.title | uppercase}}</a>
+			</li>
+		</ul>
+		<div class="gallery-section">
+			<ul>
+				<li class="col-md-4 my-gallery-animation grid" ng-repeat="product in galleryArr | filter:myFilter | filter:searchGallarey">
+		      <figure class="effect-oscar">
+		        <a href=""><img ng-src="images/portfolio/{{product.src}}" alt=""></a>                              
+		       	<figcaption>
+		    			<p>{{product.description}}</p>
+						</figcaption>	
+				  </figure>
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>

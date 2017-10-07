@@ -1,0 +1,97 @@
+<!-- /HEADER BACKGROUND SECTION -->
+<div class="baaboo-has-background ken-burn" data-parallax="scroll" data-natural-height="850" data-natural-width="1920" data-position="top" data-image-src="images/bg/bg_05.jpg" data-bleed="1">
+    <div class="baaboo-content-wrapper" style="background-image: url(images/bg/bg_05.jpg)">
+        <div class="baaboo-container-inner">
+          <div class="baaboo-title-holder">
+              <h1 class="baaboo-page-title"><span>OUR PRODUCTS</span></h1>
+          <span class="baaboo-subtitle"><span>Let's count down and enjoy big sale on our 8th anniversary</span></span>
+          </div>
+      </div>
+    </div>
+</div>
+<!-- /HEADER BACKGROUND SECTION -->
+
+<div class="bottom-bar">
+  <div class="container">
+    <ol class="breadcrumb pull-left">
+      <li class="breadcrumb-item"><a href="#!/">Home</a></li>
+      <li class="breadcrumb-item"><a href="#!/product">Product</a></li>
+      <li class="breadcrumb-item"><a href="#!/category/{{categoryPro.slug}}">{{categoryPro.name}}</a></li>
+      <li class="breadcrumb-item active">{{currentPro.name}}</li>
+    </ol>
+    <div class="navProduct pull-right">
+      <a href="#!/details/{{prevGuitar | convertDash | removeVnUnicode}}"><i class="ion-ios-arrow-left"></i></a>
+      <a href="#!/details/{{nextGuitar | convertDash | removeVnUnicode}}"><i class="ion-ios-arrow-right"></i></a>
+    </div>
+  </div>
+</div>
+<div class="container">
+
+
+<div class="details row">
+  <div class="col-md-4 ">
+    <owl-carousel-thumbnail class="owl-carousel main-carousel">
+      <div  ng-repeat="itemImage in currentPro.image track by $index" on-finish-render>
+        <img class="magnifyImg" ng-src="images/large/{{itemImage}}" />
+      </div>
+    </owl-carousel-thumbnail>
+    <owl-carousel-thumbnail class="owl-carousel thumbs-carousel">
+      <div  ng-repeat="itemImage in currentPro.image track by $index" on-finish-render>
+        <img class="magnifyImg" ng-src="images/large/{{itemImage}}" />
+      </div>
+    </owl-carousel-thumbnail>
+  </div>
+  <div class="col-md-8">
+    <div>
+      
+      <h2> {{currentPro.name | capitalize }}</h2>
+      <p>
+        <!-- RATING SECTION -->
+        <span uib-rating ng-model="rate" max="max" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null" titles="['very bad','bad', 'not too bad', 'need to improve', 'average', 'above average', 'reasonable quality','can be recommend for someone else','great', 'awesome']" aria-labelledby="default-rating"></span>
+        <span class="label" ng-class="{'label-warning': percent<30, 'label-info': percent>=30 && percent<70, 'label-success': percent>=70}" ng-show="overStar && !isReadonly">{{percent}}%</span>
+        <!-- /RATING SECTION -->
+      </p>
+      <p>Serves: 4 people</p>
+      <p>Calories: 632 kcal</p>
+      <p class="rightPrice magnifyPrice">${{currentPro.price | number:0 }}</p>
+      <p> {{currentPro.description}}</p>
+      <p class="longDescription"> {{currentPro.longDescription}}</p>
+      <p>Tags: Design, Furniture, Interior</p>
+      <div class="btn-group">
+        <button class="btn" ng-click="quantity = (quantity - 1) || 1">-</button>
+        <input class="btn" type="number" value="{{quantity}}" ng-model="quantity" min="1">
+        <button class="btn" ng-click="quantity = quantity + 1;">+</button>
+      </div>
+      <a href="" class="btn btn-cta" ng-click="addToCart(currentPro, quantity);"  custom-click><i class="ion-ios-cart"></i>Đặt hàng </a>
+
+      
+        
+      <div class="add-to-box">
+        <ul class="add-to-links">
+          <li><a href="#" class="link-wishlist"><i class="icon ion-ios-heart-outline"></i><span>Add to Wishlist</span></a></li>
+          <li><a href="#" class="link-compare"><i class="icon ion-ios-shuffle"></i><span>Add to Compare</span></a></li>
+          <li><a href="#" class="email-friend" ><i class="icon ion-ios-email-outline"></i><span>Email to a Friend</span></a></li>
+          <li><a href="#" onclick="window.print(); return false;" class="link-print"><i class="icon ion-ios-printer-outline"></i><span>Print</span></a></li>
+        </ul>
+      </div>
+
+      <!-- ACCORDION SECTION -->
+      <uib-accordion close-others="true">
+        <!-- <div uib-accordion-group class="panel-default" heading="Static Header, initially expanded" is-open="true" is-disabled=""> -->
+        <!-- <div uib-accordion-group class="panel-default" heading="{{group.title}}" ng-repeat="group in groups">  -->
+        <div uib-accordion-group class="panel-default" ng-repeat="group in groups" is-open="group.open">
+          <uib-accordion-heading>
+            <i ng-class="{'ion-ios-minus-empty': groups[$index].open, 'ion-ios-plus-empty': !groups[$index].open}"></i>
+            {{group.title}}
+          </uib-accordion-heading>
+          {{group.content}}
+        </div>
+      </uib-accordion>
+      <!-- /ACCORDION SECTION -->
+
+    </div>
+  </div>
+</div>
+
+
+</div>

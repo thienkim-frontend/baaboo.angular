@@ -1,0 +1,101 @@
+<div class="container">
+
+
+
+	
+
+
+
+
+
+
+
+
+	<!-- DIVIDERS SECTION -->
+	<div class="edgtf-separator" style="border:0; border-color: #9a9898;border-style: dotted;border-bottom-width: 1px; margin: 10px 0;"></div>
+	<div class="edgtf-separator" style="border:0; border-color: #9a9898;border-style: dashed;border-bottom-width: 1px"></div>
+	<div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_pos_align_center vc_sep_color_grey">
+		<span class="vc_sep_holder vc_sep_holder_l"><span class="vc_sep_line"></span></span>
+		<div class="vc_icon_element vc_icon_element-outer vc_icon_element-align-left">
+			<div class="vc_icon_element-inner vc_icon_element-color-custom vc_icon_element-size-xs vc_icon_element-style- vc_icon_element-background-color-grey">
+				<span class="vc_icon_element-icon ion-checkmark" style="color:#e1be64 !important"></span>
+			</div>
+		</div>
+		<span class="vc_sep_holder vc_sep_holder_r"><span class="vc_sep_line"></span></span>
+	</div>
+	<!-- /DIVIDERS SECTION -->
+
+
+	<!-- NAVIGATION SECTION -->
+	<p>Resize window to less than 768 pixels to display mobile menu toggle button.</p>
+	<nav class="navbar navbar-default" role="navigation">
+	  <div class="navbar-header">
+	    <button type="button" class="navbar-toggle" ng-click="isNavCollapsed = !isNavCollapsed">
+	      <span class="sr-only">Toggle navigation</span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	    </button>
+	    <a class="navbar-brand" href="#">A menu</a>
+	  </div>
+	  <div class="collapse navbar-collapse" uib-collapse="isNavCollapsed">
+	    <ul class="nav navbar-nav">
+	      <li><a href="#">Link 1</a></li>
+	      <li><a href="#">Link 2</a></li>
+	    </ul>
+	  </div>
+	</nav>
+	<!-- /NAVIGATION SECTION -->
+
+
+
+
+
+
+	<!-- RATING SECTION -->
+	<span uib-rating ng-model="rate" max="max" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null" titles="['one','two','three']" aria-labelledby="default-rating"></span>
+	<span class="label" ng-class="{'label-warning': percent<30, 'label-info': percent>=30 && percent<70, 'label-success': percent>=70}" ng-show="overStar && !isReadonly">{{percent}}%</span>
+
+	<pre style="margin:15px 0;">Rate: <b>{{rate}}</b> - Readonly is: <i>{{isReadonly}}</i> - Hovering over: <b>{{overStar || "none"}}</b></pre>
+	<!-- /RATING SECTION -->
+	
+	<!-- TABLE SECTION -->
+	<form>
+	  <div class="form-group">
+	    <div class="input-group">
+	      <div class="input-group-addon"><i class="fa fa-search"></i></div>
+	      <input type="text" class="form-control" placeholder="Search..." ng-model="searchPlayer">
+	    </div>      
+	  </div>
+	</form>
+	<table class="players table table-bordered table-striped">
+	  <tr>
+	    <th>
+	      <a href="javascript:void(0);" ng-click="sortType = 'name'; sortReverse = !sortReverse">Name
+	        <span ng-show="sortType == 'name' && !sortReverse" class="glyphicon glyphicon-chevron-down"></span>
+	        <span ng-show="sortType == 'name' && sortReverse" class="glyphicon glyphicon-chevron-up"></span>
+	      </a>
+	    </th>
+	    <th>
+	      <a href="javascript:void(0);" ng-click="sortType = 'matches'; sortReverse = !sortReverse">Matches
+	        <span ng-show="sortType == 'matches' && !sortReverse" class="glyphicon glyphicon-chevron-down"></span>
+	        <span ng-show="sortType == 'matches' && sortReverse" class="glyphicon glyphicon-chevron-up"></span>
+	      </a>
+	    </th>
+	    <th>
+	      <a href="javascript:void(0);" ng-click="sortType = 'averagee'; sortReverse = !sortReverse">Averagee
+	        <span ng-show="sortType == 'averagee' && !sortReverse" class="glyphicon glyphicon-chevron-down"></span>
+	        <span ng-show="sortType == 'averagee' && sortReverse" class="glyphicon glyphicon-chevron-up"></span>
+	      </a>
+	    </th>
+	  </tr>
+	  <tr ng-repeat="player in players | orderBy:sortType:sortReverse | filter:searchPlayer">
+	    <td>{{player.name}}</td>
+	    <td>{{player.matches}}</td>
+	    <td>{{player.avg}}</td>
+	  </tr>
+	</table>
+	<!-- /TABLE SECTION -->
+</div>
+
+

@@ -1,0 +1,273 @@
+.hero {
+  position: relative;
+  height: 500px;
+  .hero_img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+
+  }
+  .hero_inner {
+    text-align: center;
+    z-index: 9;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    @include transform(translateX(-50%));
+    color: $white;
+    h1 {
+      font-size: $font-lg;
+    }
+    .btn_more {
+      display: inline-block;
+      vertical-align: middle;
+      width: 160px;
+      color: $white;
+      text-transform: uppercase;
+      padding: 10px;
+      border: 1px solid $white;
+      margin: 30px 0 120px;
+      font-weight: bold;
+      background-color: transparent;
+      &:hover {
+        color: $dark-grey;
+      }
+    }
+  }
+  .quick_categories {
+    position: relative;
+    @include transform(translateY(50%));
+    li {
+      float: left;
+      width: 16.66%;
+      i{font-size: 48px;}
+    }
+    a {
+      color: $white;
+      padding-top: 20px;
+      box-sizing: border-box;
+      height: 110px;
+      display: block;
+      &:hover {
+        color: $highlight-color;
+        background-color: $white;
+        border: 1px solid $highlight-color;
+      }
+    }
+    ul {
+      span {
+        display: block;
+        margin-top: 10px;
+        font-size: 16px;
+      }
+    }
+  }
+  .info_contact {
+    text-align: left;
+    width: 335px;
+    height: 100px;
+    position: absolute;
+    top: -80px;
+    right: -12px;
+    padding-left: 85px;
+    .icon-phone-style2{
+      position: absolute;
+      top: 12px;
+      left: 0;
+      font-size: 80px;
+    }
+    .number {
+      font-size: 40px;
+      display: block;
+      @include text-shadow($black 1px 1px 0px);
+    }
+  }
+}
+.intro_section {
+  margin-top: 120px;
+  [class^="col"]{
+    padding: 1px;
+    img{width: 100%;}
+  }
+  .icon-cart{ margin-right: 10px;}
+  a{color: $white!important;}
+  .btn{
+    border-radius: 20px;
+    background: $white;
+    color: $highlight-color !important;
+  }
+  .btn_more{
+    margin: 30px auto;
+    display: table;
+    width: 150px;
+    color: $highlight-color !important;
+    &:hover{
+      background-color: $highlight-color ;
+      color: $white!important;
+      text-decoration: none;
+    }
+  }
+  .icon-separator {
+    width: 70px;
+    height: 20px;
+    color: $grey-02;
+    background: #f9f9f9;
+    font-size: 20px;
+    display: block;
+    position: relative;
+    margin: 10px auto 30px auto;
+    &:after {
+      content: '';
+      width: 500px;
+      height: 1px;
+      position: absolute;
+      top: 50%;
+      left: -212px;
+      z-index: -1;
+      background-color: $grey-02;
+    }
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+  .item_inner {
+    border-color: $white;
+    color: $white;
+    padding: 0px;
+    overflow: hidden;
+    a {
+      color: $white;
+    }
+    &:hover {
+      .des_container {
+        opacity: 0.9;
+        visibility: visible;
+        @include transform(scale(1) translateX(0));
+      }
+    }
+    .des_container {
+      padding: 60px 20px 20px;
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      right: 15px;
+      bottom: 15px;
+      z-index: 10;
+      @include opacity(0);
+      visibility: hidden;
+      @include transform(scale(0.9));
+      @include transition(all 0.6s ease);
+      text-align: center;
+      border: 1px solid $white;
+      outline: 15px solid $highlight-color;
+      background-color: $highlight-color;
+      .price_box {
+        margin: 20px 0px;
+      }
+      .old_price {
+        color: $white;
+      }
+    }
+    
+  }
+}
+.item_inner {
+  padding: 14px;
+  background-color: $white;
+  position: relative;
+
+  .img_container {
+    position: relative;
+    img{ width: 100%;}
+    .btn {
+      position: absolute;
+      z-index: 1000;
+      top: 50%;
+      left: 50%;
+      margin: -30px;
+      @include opacity(0);
+    }
+    &:hover {
+      .btn {
+        opacity: 1;
+      }
+      .overlay {
+        &:after {
+          @include opacity(1);
+        }
+      }
+    }
+  }
+  .overlay {
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      z-index: 100;
+      @include transition(all 0.3s ease-out);
+      @include opacity(0);
+      background-color: rgba(37, 41, 44, 0.7);
+    }
+  }
+
+  .des_container {
+    min-height: 80px;
+    padding: 14px 0px 0;
+    .info {
+      margin: 10px 0px;
+      color: $dark-grey;
+      min-height: 2.85em;
+    }
+    .pro_name a{
+      font-size: 16px;
+      color: $dark-grey;
+    }
+    .old_price {
+      text-decoration: line-through;
+      font-size: 14px;
+      color: $grey;
+    }
+  }
+}
+.info_delivery {
+  margin-top: 20px;
+  padding: 30px 0;
+  text-align: center;
+  color: $white;
+  background: $black url(../images/info-bg.jpg) repeat-x;
+  h4 {
+    margin: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $white;
+  }
+  [class^="icon"] {
+    @include border-radius(100%);
+    width: 60px;
+    height: 60px;
+    font-size: 38px;
+    color: $highlight-color;
+    display: inline-block;
+    position: relative;
+    background-color: $white;
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      line-height: 60px;
+      text-align: center;
+      width: 100%;
+    }
+  }
+  .icon-delivery{font-size: 30px;}
+}
+.owl-carousel{
+  margin-bottom: 0;
+}

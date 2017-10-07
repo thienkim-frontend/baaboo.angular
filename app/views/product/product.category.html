@@ -1,0 +1,65 @@
+
+<div class="baaboo-has-background ken-burn" data-parallax="scroll" data-natural-height="850" data-natural-width="1920" data-position="top" data-image-src="images/bg/bg_05.jpg" data-bleed="1">
+    <div class="baaboo-content-wrapper" style="background-image: url(images/bg/bg_04.jpg)">
+        <div class="baaboo-container-inner">
+          <div class="baaboo-title-holder">
+              <h1 class="baaboo-page-title"><span>OUR CATEGORIES</span></h1>
+          <span class="baaboo-subtitle"><span>There are variety categories that will be match your choice</span></span>
+          </div>
+      </div>
+    </div>
+</div>
+<div class="container">
+<div class="row">
+	<aside class="col-md-3 side-bar">
+		
+		<h3>CATEGORIES</h3>
+		<ul>
+			<li ng-repeat="itemCategory in categoryList" ng-click="select($index)" ng-class="{active: $index == selected}">{{itemCategory.name}}</li>
+		</ul>
+		
+		<h3>FILTER BY PRICE</h3>
+		<slider min="3000" max="50000" step="5000" ng-model="sliderValue"></slider>
+		<!-- <input type="text" ng-model="sliderValue"/> -->
+		<div class="price_slider_amount">
+			<div class="price_label" style="">
+				Price: <span class="from">{{sliderRanges.min | number:0}}</span> — <span class="to">{{sliderRanges.max | number:0}} vnd</span>
+			</div>
+		</div>
+		
+	</aside>
+	<div class="col-md-9">
+		<section class="filter">
+			<span>Showing {{results.length}}/ {{categoryArr.length}} results</span>
+			<div class="select-wrapper pull-right">
+				<select ng-model="viewby" ng-change="setItemsPerPage(viewby)">
+				  <option ng-repeat="option in [3, 6, 9, 12]" value="{{option}}">{{option}} items per page </option>
+				</select>
+			</div>
+		</section>
+		<div class="category-section ">
+			<div class="row">
+			<ul class="">
+				<li class="col-md-4 product-item grid" ng-repeat="itemPro in guitarVariable  | rangeFilter:sliderRanges as results" >
+	        <div class="item_inner">
+	          <div class="img_container">
+	            <img src="images/product/{{itemPro.image[0]}}" alt="{{itemCategory.name}}" />
+	          </div>
+	          <div class="des_container">
+	            <h5 class="pro_name"><a href="#!/details/{{itemPro.name | convertDash | removeVnUnicode}}">{{itemPro.name | capitalize}}</a></h5>
+	              <div class="info"><span ng-bind-html="itemPro.description | limitTo: 55" ></span><span ng-if="itemPro.description.length > 55">&hellip;</span></div>
+	            <div class="price_box">
+	              <span class="price">{{itemPro.price | number:0 }} vnd</span>
+	            </div>
+	            <a href="javascript:void(0);" class="btn btn-cta" ng-click="addToCart(itemPro);" custom-click><i class="ion-ios-cart"></i>Đặt hàng </a>
+	          </div>
+	        </div>
+				</li>
+				<li class="col-md-12 empty-product" ng-if="!guitarVariable.length">0 item available </li>
+			</ul>
+			</div>
+			<ul uib-pagination boundary-links="true" total-items="totalItems" items-per-page="numPerPage" ng-model="currentPage"  class="pagination-sm pull-right" max-size="5"></ul>
+		</div>
+	</div>
+	
+</div>

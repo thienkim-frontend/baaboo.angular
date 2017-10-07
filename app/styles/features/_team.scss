@@ -1,0 +1,217 @@
+
+/*
+==============================
+TEAMS
+==============================
+*/
+
+.team-item-style2 {
+    position: relative;
+    padding-bottom: 60px;
+    overflow: hidden;
+    .content-box {
+        text-align: center;
+        height: 143px;
+        overflow: hidden;
+        background-color: #FFF;
+        position: absolute;
+        transition: margin-top .3s;
+        margin-top: 0;
+        z-index: 9;
+        right: 0;
+        left: 0;
+        h2 {
+            font-size: 17px;
+            font-weight: 600;
+            text-transform: uppercase;
+            line-height: 17px;
+            border-bottom: 1px solid #d8d8d8;
+            border-radius: 0px;
+            display: inline-block;
+            position: relative;
+            width: 80%;
+            margin: auto;
+            padding: 8px 5px;
+        }
+        h4 {
+            font-size: 11px;
+            color: #A0A0A0;
+        }
+        p {
+            margin: 15px;
+            max-height: 54px;
+        }
+    }
+    .social-group{
+        a{ color: $grey}
+        i {
+            padding: 10px;
+            font-size: 13px;
+            width: 30px;
+        } 
+    }
+    .img-box {
+        display: block;
+        background-color: transparent;
+        img {
+            transition: all .3s, margin-top 1ms, width 1ms, max-width 1ms, margin-left 1ms !important;
+            animation: all .3s !important;
+            position: relative;
+            width: 100%
+        }
+    }
+
+    .img-box:before {
+        display: none;
+    }
+    &:hover{
+        .content-box {
+            height: auto;
+            margin-top: -96px;
+            transition: margin-top .3s;
+            margin-bottom: 0;
+        } 
+        .img-box img {
+            transform: translateY(25px) scale(1.1) !important;
+        }
+    }
+}
+
+
+/* Team */
+.baaboo-team-holder {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    .baaboo-team-name{
+        text-transform: uppercase
+    }
+    .baaboo-team-info {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        vertical-align: middle;
+        text-align: center;
+        margin: 33px 0 0
+    }
+    .baaboo-team-icon {
+        display: inline-block;
+        opacity: 0;
+        transform: scale(.3);
+        transition: all 0s .4s
+    }
+    .baaboo-team-image {
+        position: relative;
+        display: inline-block;
+        max-width: 100%;
+        vertical-align: middle
+    }
+    .baaboo-team-position {
+        display: block;
+        margin: 9px 0 0;
+        color: #A0A0A0;
+    }
+    .baaboo-team-social-wrapper {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(21,21,21,.5);
+        z-index: 1;
+        opacity: 0;
+        transform: translateZ(0);
+        transition: opacity .2s ease-out
+    }
+    .baaboo-team-social-outer {
+        position: relative;
+        display: table;
+        table-layout: fixed;
+        height: 100%;
+        width: 100%;
+        text-align: center
+    }
+    .baaboo-team-social-inner {
+        position: relative;
+        display: table-cell;
+        height: 100%;
+        width: 100%;
+        vertical-align: middle
+    }
+    .baaboo-team-social-holder {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        vertical-align: middle
+    }
+    .baaboo-team-icon {
+        font-size: 24px;
+        margin: 0 9px;
+        a{
+            color: $white;
+            &:hover{
+                color: $highlight-color;
+            }
+        }
+    }
+    &:hover{
+        .baaboo-team-social-wrapper {
+            opacity: 1
+        }
+        .baaboo-team-icon{
+            opacity: 1;
+             transform: scale(1);
+            &:nth-child(1) {
+                transition: all .45s cubic-bezier(.56,1.36,.45,1.36) 0s
+            }
+            &:nth-child(2) {
+                transition: all .45s cubic-bezier(.56,1.36,.45,1.36) .1s
+            }
+            &:nth-child(3){
+                transition: all .45s cubic-bezier(.56,1.36,.45,1.36) .2s
+            }
+        }
+    }
+}
+
+
+
+// .baaboo-team-holder .baaboo-team-social-outer {
+//     position: relative;
+//     display: table;
+//     table-layout: fixed;
+//     height: 100%;
+//     width: 100%;
+//     text-align: center
+// }
+
+// .baaboo-team-holder .baaboo-team-social-inner {
+//     position: relative;
+//     display: table-cell;
+//     height: 100%;
+//     width: 100%;
+//     vertical-align: middle
+// }
+
+// .baaboo-team-holder .baaboo-team-social-holder {
+//     position: relative;
+//     display: inline-block;
+//     width: 100%;
+//     vertical-align: middle
+// }
+
+// .baaboo-team-holder .baaboo-team-social-holder .baaboo-team-icon {
+//     font-size: 24px;
+//     margin: 0 9px
+// }
+
+// .baaboo-team-holder .baaboo-team-social-holder .baaboo-team-icon .baaboo-icon-element {
+//     color: #fff;
+//     font-size: inherit
+// }
+
+// .baaboo-team-holder .baaboo-team-social-holder .baaboo-team-icon .baaboo-icon-element:hover {
+//     color: #e1be64
+// }

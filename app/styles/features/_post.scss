@@ -1,0 +1,77 @@
+.baaboo-post-holder {
+    display: inline-block;
+    .baaboo-post-holder-inner {
+        position: static;
+        padding: 0;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        background-position: center 0;
+        overflow: hidden;
+        background-size: cover;
+    }
+
+    .baaboo-post-text-holder {
+        opacity: 0;
+        // background: #f6f6f6;
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        vertical-align: middle;
+        background: rgba(0,0,0,.4);
+        transition: opacity .26s ease-in;
+        .baaboo-post-text-inner {
+            color: $white;
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            vertical-align: middle;
+            text-align: center;
+            height: 100%;
+            padding: 9%;
+            box-sizing: border-box;
+        }
+        .baaboo-post-title {
+            margin: 4px 0 10px;
+            transform: translate3d(0,25px,0);
+            font-size: 18px;
+        }
+        .baaboo-post-text {
+            margin: 0 0 24px;
+            transform: translate3d(0,40px,0);
+        }
+        .edgtf-btn {
+            transform: translate3d(0,70px,0);
+            vertical-align: middle;
+            cursor: pointer;
+            letter-spacing: .2em;
+            padding: 8px 15px;
+            text-align: center;
+            text-transform: uppercase;
+            margin: 17px 0 0;
+            z-index: 1;
+            font-size: 11px;
+            color: $white;
+            &.edgtf-btn-outline {
+                background-color: transparent;
+                border: 1px solid rgba(204,204,204,0.8);
+                &:hover{
+                    background-color: $highlight-color;
+                }
+            }
+        }
+        .baaboo-post-title, .baaboo-post-text, .edgtf-btn{
+            transition: transform .35s cubic-bezier(.34,.52,.57,1) .35s,opacity .35s cubic-bezier(.34,.52,.57,1);
+            opacity: 0
+        }
+    }
+    &:hover{
+        .baaboo-post-text-holder {
+            opacity: 1
+        }
+        .baaboo-post-text, .baaboo-post-title, .edgtf-btn{
+            transform: translate3d(0,0,0);
+            transition: all .35s cubic-bezier(.34,.52,.57,1);
+            opacity: 1
+        }
+    } 
+}

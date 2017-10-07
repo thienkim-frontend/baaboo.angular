@@ -1,0 +1,106 @@
+<!-- CART POPUP -->
+<div id="cart_popup" ng-controller="CartCtrl as cart" ng-cloak>
+    <h4>Chi tiết giỏ hàng</h4>
+    <table class="tbl-cart" >
+      <tr ng-if="!cart.proArr.length">
+        <td class="text-center"> Gio hang trong. </td>
+      </tr>
+      <tr ng-repeat="product in cart.proArr" ng-if="cart.proArr.length">
+        <td>
+          <img class="thumbnail-pro" ng-src="images/product/{{product.image[0]}}" title="{{product.name}}"/>
+          <h4>{{product.name}}</h4>
+        </td>
+        <td class="width-30">
+          {{product.price}}
+          <span class="badge"> x{{product.quantity}} </span>
+          <button ng-click="cart.increaseItemAmount(product)"><i class="fa fa-plus"></i></button>/
+          <button ng-click="cart.decreaseItemAmount(product)"><i class="fa fa-minus"></i></button>
+        </td>
+        <td class="width-20">
+          <span class="price">{{cart.gettotalEachProduct(product)}}</span>
+        </td>
+        <td class="width-10"> <a href="" class="delete" ng-click="cart.removeFromCart(product)"><i class="fa fa-times"></i></a></td>
+      </tr>
+    </table>
+    <div class="total pull-right">
+      Tổng cộng <span class="highlight-color">{{cart.getCartPrice()}} vnd</span>
+    </div>
+    <div class="clearfix"></div>
+    <h4>THÔNG TIN GIAO HÀNG:</h4>
+    <form id="frm_cart" action="#" name="cartFrm" method="post"> 
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <i class="icon-user"></i>
+            <input type="text" ng-model="cart.userName" name="username" placeholder="Họ Tên*" required is-name>
+            <div ng-messages="cartFrm.userName.$error" ng-show="cartFrm.userName.$dirty" role="alert">
+                <div ng-message="isName">Just characters are allowed</div>
+                <div ng-messages-include="views/layout/error-messages.html"></div>
+            </div>
+          </div>
+          <div class="form-group">
+            <i class="icon-phone"></i>
+            <input type="text" ng-model="cart.phone" name="phone" placeholder="Điện thoại*" required ng-pattern="/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/">
+            <div ng-messages="cartFrm.phone.$error" ng-show="cartFrm.phone.$dirty" role="alert">
+                <div ng-message="pattern">Must be a valid 10 digit phone number</div>
+                <div ng-messages-include="views/layout/error-messages.html"></div>
+            </div>
+          </div>
+          <div class="form-group">
+            <i class="icon-email"></i>
+            <input type="text" ng-model="cart.email" name="email" placeholder="Email*">
+          </div>
+          <div class="form-group">
+            <i class="icon-marker"></i>
+            <input type="text" ng-model="cart.address" name="address" placeholder="Địa chỉ*" style="">
+          </div>
+          <div class="form-group">
+            <div class="select-wrapper">
+              <select name="district" class="Sitedropdown" ng-model="cart.district"   ng-options="item as item.dictrictName for item in dictricts track by item.dictrictId" required> 
+                <option value="">Select District</option> 
+              </select> 
+            </div>
+            <div ng-messages="cartFrm.district.$error" ng-show="cartFrm.district.$dirty" role="alert">
+                <div ng-messages-include="views/layout/error-messages.html"></div>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="cart.date" is-open="popup1.opened" datepicker-options="dateOptions" ng-required="true" close-text="Close" placeholder="Thời gian giao hàng"/>
+            <button type="button" class="btn-calendar" ng-click="open1()"><i class="icon-calendar"></i></button>
+          </div>
+          <div class="form-group">
+            <textarea name="note" id="comment" cols="30" rows="5" ng-model="cart.note" placeholder="Ghi chú" style="margin-bottom: 5px;" ng-maxlength="150" maxlength="150"></textarea>
+            <p class="text-right">{{cart.note.length || 0}}/ 150</p>
+          </div>
+          <div class="form-group">
+            <div class="block checkbox_group">
+              <div class="radio">
+                
+                <label for="checkbox_01"><input id="checkbox_01" type="radio" name="custom" value="rush_order">Giao hàng gấp (trong vòng 30 phút)</label>
+              </div>
+              <div class="radio">
+                
+                <label class="last"  for="checkbox_01"><input type="radio" name="custom" value="normal_order" checked>Giao hàng trong ngày.</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 info_wrapper">
+          <div class="info_inner">
+            <ul>
+              <li>Miễn phí cho các đơn hàng từ 100.000 vnđ ở các quận 1, 3, Phú Nhuận.</li>
+              <li>Trường hợp khác:  phí giao hàng từ 15.000 - 50.000 vnđ (Tùy khu vực).</li>
+              <li>Vui lòng đặt hàng trước 1 ngày. <br>Liên lạc với đường dây nóng của baa&boo <strong><a href="tel:">0933 675 051</a>
+              </strong> để biết thêm <br>chi tiết.</li>
+            </ul>
+          </div>
+        </div>
+      </div>  
+      <div class="pull-right">
+        <button type="submit" class="baaboo-btn close-fancybox">Tiếp tục đặt mua</button>
+        <button type="submit" class="baaboo-btn highlight-bg btn-submit">Mua hàng</button>
+      </div>
+    </form>
+</div>
+

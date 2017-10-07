@@ -1,4 +1,4 @@
-# baaboo-app by [Thien Kim](https://thienkim-frontend.github.io/cv/)
+## baaboo-app by [Thien Kim](https://thienkim-frontend.github.io/cv/)
 > This app is buit with Angular 1, Yeoman
 
 *Useful Urls*
@@ -6,23 +6,23 @@
 
 Home						https://thienkim-frontend.github.io/baaboo.angular/#!
 
-Product					https://thienkim-frontend.github.io/baaboo.angular/product
+Product					https://thienkim-frontend.github.io/baaboo.angular/#!/product
 
-Category				https://thienkim-frontend.github.io/baaboo.angular/category/banh-bo-nuong
+Category				https://thienkim-frontend.github.io/baaboo.angular/#!/category/banh-bo-nuong
 
-Product detail	https://thienkim-frontend.github.io/baaboo.angular/details/banh-cupcake
+Product detail	https://thienkim-frontend.github.io/baaboo.angular/#!/details/banh-cupcake
 
-Contact					https://thienkim-frontend.github.io/baaboo.angular/contact
+Contact					https://thienkim-frontend.github.io/baaboo.angular/#!/contact
 
-Price						https://thienkim-frontend.github.io/baaboo.angular/price
+Price						https://thienkim-frontend.github.io/baaboo.angular/#!/price
 
 Gallery					https://thienkim-frontend.github.io/baaboo.angular/#!/gallery
 
-About						https://thienkim-frontend.github.io/baaboo.angular/about
+About						https://thienkim-frontend.github.io/baaboo.angular/#!/about
 
-Team						https://thienkim-frontend.github.io/baaboo.angular/team
+Team						https://thienkim-frontend.github.io/baaboo.angular/#!/team
 
-404							https://thienkim-frontend.github.io/baaboo.angular/404
+404							https://thienkim-frontend.github.io/baaboo.angular/#!/404
 
 
 ## Plugins
@@ -45,6 +45,10 @@ countTo.js 						https://github.com/mhuggins/jquery-countTo
 countdown.js 					http://keith-wood.name/countdown.html
 
 appear.js 						https://github.com/bas2k/jquery.appear/
+
+Parallax.js						https://github.com/pixelcog/parallax.js/
+
+WOW.js 								https://github.com/matthieua/WOW
 
 Bootstrap 3 					http://bootstrapdocs.com/v3.0.3/docs/
 

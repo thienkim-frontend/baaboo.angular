@@ -1,0 +1,55 @@
+
+<!-- ABOUT US -->
+<section id="contact">
+		<ng-map zoom="4" center="[-26.6875847,135.0857733]" style="height:450px">
+	    <!-- <custom-marker position="10.820102, 106.692245">
+	      <div> Custom Marker</div> 
+	    </custom-marker> -->
+	    <div ng-repeat="p in points">
+	     	<marker icon="images/marker.png" position="{{p.latitude}}, {{p.longitude}}"></marker>
+	    </div>
+	  </ng-map>
+	<div class="main-footer">
+    	<div class="container">
+			<div class="col-md-3 text-center">
+				<div class="intro-container">
+					<h4>Điều gì làm nên sự khác biệt ở Baa&Boo?</h4>
+					<p>Chính là chọn lựa từ các nguyên liệu nguồn gốc thiên nhiên, tốt nhất để làm nên các thành phần như hạt củ năng, bột lọc lá dứa, nếp cẩm, bánh flan và tuyển chọn những loại trái cây đặc trưng vốn có của các nước vùng nhiệt đới như Việt Nam, nhưng hoàn toàn thú vị nhé! </p>
+				</div>
+			</div>
+			<div class="col-md-6 noprint">
+				<div class="contact-form-container">
+					<div class="section-title">
+						<h3 class="normal-color">LIÊN HỆ</h3>
+					</div>
+					<form id="contact-form" class="footer-contact-form" method="post" action="#">
+						<input type="text" class="name" name="name" placeholder="Họ tên*" required value="">
+						<input type="text" class="email" name="email" placeholder="Email*" required value="">
+						<textarea id="message" class="message" name="message" rows="16" placeholder="Nội dung" required></textarea>
+						<button type="submit" class="baaboo-btn">Gửi Email</button>
+					</form>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="address-container">
+					<address>
+						<img src="images/map-pin.png" alt="Address">
+						<p>
+							<span>Chi nhánh 1</span>
+							<span>185 Võ Văn Tần, P5, Q.3</span>
+							<span>Chi nhánh 2</span>
+							<span>35 Lý Thường Kiệt, P11, Q.6</span>
+							<span>Chi nhánh 3</span>
+							<span>185 Võ Văn Tần, P5, Q.3</span>
+						</p>							
+						<img src="images/phone-icon.png" alt="Phone">
+						<p><span>Phone: (415) 124-5678
+							</span><span>Fax: (415) 124-5678</span></p>							
+						<img src="images/mail-icon2.png" alt="Email">
+						<p><span>support@yourname.com</span></p>						
+					</address>
+				</div>
+			</div>
+    	</div>
+    </div>		
+</section>

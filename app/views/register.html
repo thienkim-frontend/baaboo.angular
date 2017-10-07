@@ -1,0 +1,48 @@
+<!--REGISTER POPUP -->
+<div class="formcontainer" id="register_frm">
+    <form name="registerFrm" class="form-horizontal" novalidate ng-submit="registerCtrl.submit()">
+        <input type="hidden" ng-model="user.id" />
+        <div class="col-md-12">
+            <div class="form-group" ng-class="{ 'has-error': registerFrm.userName.$touched && registerFrm.userName.$invalid }">
+                <label class="control-label" for="uname">Name</label>
+                <div class="">
+                    <input type="text" ng-model="user.username" id="uname" name="userName" class="form-control" placeholder="Enter your name" required minlength="3" maxlength="15" is-available/>
+                    <div ng-messages="registerFrm.userName.$error" ng-show="registerFrm.userName.$touched" role="alert">
+                        <ng-message when="isAvailable">This username is already taken!</ng-message>
+                        <ng-message when="maxlength">This field can be at most 15 characters long.</ng-message>
+                        <div ng-messages-include="views/layout/error-messages.html"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group" ng-class="{ 'has-error': registerFrm.password.$touched && registerFrm.password.$invalid }">
+                <label for="password">Password:</label>
+                <input type="password" name="password" ng-model="user.password" ng-minlength="5" ng-maxlength="30" password-format-validator required class="form-control"/>
+                <ng-messages for="registerFrm.password.$error" ng-show="registerFrm.password.$dirty" class="errors">
+                    <div ng-message-exp="['minlength', 'maxlength']">Password must be between 5 and 30 characters in length</div>
+                    <div ng-message="digit">Password must include a digit</div>
+                    <div ng-message="case">Password must include both upper and lower case characters</div>
+                    <div ng-message="special">Password must include a special character</div>
+                    <div ng-messages-include="views/layout/error-messages.html"></div>
+                </ng-messages>
+            </div>
+
+            <div class="form-group" ng-class="{ 'has-error': registerFrm.email.$touched && registerFrm.email.$invalid }">
+                <label for="email">Email </label>
+                <input type="email" ng-model="user.email" name="email" required custom-email class="form-control"/>
+
+                <div ng-messages="registerFrm.email.$error" ng-show="registerFrm.userName.$dirty" role="alert">
+                    <div ng-message="email">This field must be a valid email address.</div>
+                    <div ng-messages-include="views/layout/error-messages.html"></div>
+                </div>
+            </div>
+            <div class="form-actions form-group pull-right">
+                <input type="submit" class="baaboo-btn" value="submit" ng-disabled="registerFrm.$pristine || registerFrm.$invalid ">
+
+            </div>
+        </div>
+    </form>
+</div>
+
+
+
+<!-- // REGISTER POPUP  -->

@@ -1,0 +1,91 @@
+footer {
+  a{color: $grey;}
+  background: $light-grey;  
+  .footer-section{
+    padding: 20px 0;
+  }
+  .footer-title{
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+  .copyright{
+    padding: 10px;
+    text-align: center;
+    background-color: $white;
+  }
+  .has-form{
+    padding-top: 40px;
+  }
+}
+
+.baaboo-social-widget{
+  font-size: 18px;
+  a + a{
+    margin-left: 15px;
+    vertical-align: middle;
+    display: inline-block;
+  }
+  a:hover{
+    color: $highlight-color;
+  }
+  
+}
+.baaboo-newsletter-frm{
+  position: relative;
+  input{border: none;}
+  .btn-send{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 18px;
+    background: none;
+    border: 0;
+    color: $grey;
+  }
+}
+/*-----------------------------------------
+ 1.0 - instagram
+------------------------------------------*/
+.baaboo-instagram-widget{
+  margin: 0 -5px -10px;
+  li{
+    padding: 0 5px;
+    margin: 0 0 10px;
+    float: left;
+    width: 25%;
+    max-width: 90px;
+    box-sizing: border-box;
+    &::nth-child(3n+1){
+      clear: both;
+    }
+  }
+  a {
+    position: relative;
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255,255,255,.25);
+        opacity: 0;
+        transition: opacity .3s ease-in-out
+    }
+    &:hover{
+      opacity: 1;
+      img{
+        transform: scale(1.1);
+      }
+    }
+  }
+  img{
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: all .45s cubic-bezier(.34,.52,.57,1.04);
+  }
+}
