@@ -13,7 +13,7 @@
 			"c62a23dd-3638-42ac-b4fd-eba231388f0a"
 			],
 			"sku": "sku_SAPPHIRE_variant1_1493137169755",
-			"price": 2800,
+			"price": 3500,
 			"image": ["02.jpg", "03.jpg", "04.jpg", "02.jpg", "03.jpg", "04.jpg"]
 		},
 		{
@@ -26,7 +26,7 @@
 			"c62a23dd-3638-42ac-b4fd-eba231388f0a"
 			],
 			"sku": "sku_SAPPHIRE_variant1_1493137169755",
-			"price": 3000,
+			"price": 10000,
 			"image": ["03.jpg", "04.jpg", "05.jpg", "07.jpg"]
 		},
 		{
@@ -39,7 +39,7 @@
 			"c62a23dd-3638-42ac-b4fd-eba231388f0a"
 			],
 			"sku": "sku_SAPPHIRE_variant1_1493137169755",
-			"price": 2800,
+			"price": 30000,
 			"image": ["04.jpg", "03.jpg", "08.jpg"]
 		},
 		{
@@ -52,7 +52,7 @@
 			"c62a23dd-3638-42ac-b4fd-eba231388f0a"
 			],
 			"sku": "sku_SAPPHIRE_variant1_1493137169755",
-			"price": 2800,
+			"price": 6000,
 			"image": ["05.jpg", "04.jpg", "03.jpg", "08.jpg"]
 		},
 		{
@@ -76,7 +76,7 @@
 			"980c4bf7-28ff-49be-935c-79410fd93d66"
 			],
 			"sku": "sku_MB_PREMIUM_TECH_T_variant1_1493137169775",
-			"price": 9000,
+			"price": 20000,
 			"image": ["08.jpg", "04.jpg", "03.jpg", "08.jpg"]	
 		},
 		{
@@ -88,7 +88,7 @@
 			"980c4bf7-28ff-49be-935c-79410fd93d66"
 			],
 			"sku": "sku_GIRLS_HARTBREAK_CREW_variant1_1493137169760",
-			"price": 3400,
+			"price": 34000,
 			"image": ["09.jpg", "04.jpg", "03.jpg", "08.jpg"]
 		},
 		{
@@ -101,7 +101,7 @@
 			"c62a23dd-3638-42ac-b4fd-eba231388f0a"
 			],
 			"sku": "sku_SAPPHIRE_variant1_1493137169755",
-			"price": 3000,
+			"price": 10000,
 			"image": ["13.jpg", "12.jpg", "04.jpg", "03.jpg", "08.jpg"]
 		},
 		{
@@ -113,7 +113,7 @@
 			"fba32611-b398-48ae-9a5e-28257470c8fb"
 			],
 			"sku": "sku_WB_ATHLETIC_TANK_variant1_1493137169762",
-			"price": 65000,
+			"price": 45000,
 			"image": ["07.jpg", "04.jpg", "03.jpg", "08.jpg"]
 		},
 		{
